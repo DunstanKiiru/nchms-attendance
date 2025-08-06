@@ -39,10 +39,10 @@
                             <td class="px-6 py-2 text-gray-700 dark:text-gray-400">{{ $user->name }}</td>
                             <td class="px-6 py-2 text-gray-700 dark:text-gray-400">{{ $user->email }}</td>
                             <td class="px-6 py-2 space-x-1">
-                                <button
+                                <a href="{{  route('users.edit', $user->id)}}"
                                     class="cursor-pointer px-3 py-2 text-xs font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
                                     Edit
-                                </button>
+                                </a>
                                 <button
                                     class="cursor-pointer px-3 py-2 text-xs font-medium text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300">
                                     Delete
