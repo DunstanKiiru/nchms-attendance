@@ -15,14 +15,15 @@ class Employee extends Model
         'photo_path',
     ];
 
+    // Employee belongs to a User
     public function user()
     {
         return $this->belongsTo(User::class);
     }
 
+    // Accessor to get employee name from the related user
     public function getNameAttribute()
-{
-    return $this->user?->name;
-}
-
+    {
+        return $this->user?->name;
+    }
 }
