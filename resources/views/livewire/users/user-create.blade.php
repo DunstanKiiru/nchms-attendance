@@ -1,7 +1,7 @@
 <div>
     <div class="relative mb-6 w-full">
         <flux:heading size="xl" level="1">{{ __('Create User') }}</flux:heading>
-        <flux:subheading size="lg" class="mb-6">{{ __('Form for create new user') }}</flux:subheading>
+        <flux:subheading size="lg" class="mb-6">{{ __('create new user') }}</flux:subheading>
         <flux:separator variant="subtle" />
     </div>
     <div>
